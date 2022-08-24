@@ -1,1 +1,1 @@
-# LPSub Fonts
+# LPSub Fonts API
