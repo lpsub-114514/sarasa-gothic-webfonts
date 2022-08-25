@@ -8,19 +8,6 @@ import {
   possibleValues,
 } from '../data/fonts'
 
-// const fontWeightValues = {
-//   'Thin (Hairline)': '100',
-//   'Extra Light (Ultra Light)': '200',
-//   'Light': '300',
-//   'Normal (Regular)': '400',
-//   'Medium': '500',
-//   'Semi Bold (Demi Bold)': '600',
-//   'Bold': '700',
-//   'Extra Bold (Ultra Bold)': '800',
-//   'Black (Heavy)': '900',
-//   'Extra Black (Ultra Black)': '950',
-// }
-
 const props = defineProps<{
   font: string
 }>()
@@ -30,7 +17,6 @@ const chosenArea = ref<keyof typeof possibleValues.area>('-sc')
 const chosenWeight = ref<keyof typeof possibleValues.weight>('(留空)')
 const chosenItalic = ref<keyof typeof possibleValues.italic>('(留空)')
 
-// const chosenFontWeight = ref('400') // Normal (Regular)
 const chosenFontStyle = ref('normal')
 
 const cssFilename = computed(() => {
@@ -66,7 +52,6 @@ const previewTextStyle = computed(() => {
 
   return {
     fontFamily: `Arial, Helvetica, '${fontFamily.join(' ')}', sans-serif`,
-    // fontWeight: parseInt(chosenFontWeight.value),
     fontStyle: chosenFontStyle.value,
   }
 })
@@ -94,13 +79,6 @@ function firstUpperCase(s: string) {
     </select>
     .css
   </div>
-  
-  <!-- <div class="font-config">
-    <label for="choose-font-weight">字重选择 (css 中的 font-weight)：</label>
-    <select v-model="chosenFontWeight" name="font-weight-select" id="choose-font-weight" class="font-selector">
-      <option v-for="name in Object.keys(fontWeightValues)" :value="fontWeightValues[name]">{{ name }}</option>
-    </select>
-  </div> -->
 
   <div class="font-config">
     <label for="choose-font-style">字形选择 (css 中的 font-style)：</label>
