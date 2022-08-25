@@ -7,11 +7,13 @@
 1. 添加字体链接以请求所需的网页字体：
 
 ```css
-@import url("//fonts.lpsub.com/css/sarasagothicsc.css");
+@import url("//fonts.lpsub.com/css/sarasa-gothic-sc.css");
 ```
+
 &nbsp;&nbsp;&nbsp;或者：
+
 ```html
-<link rel="stylesheet" href="//fonts.lpsub.com/css/sarasagothicsc.css" />
+<link rel="stylesheet" href="//fonts.lpsub.com/css/sarasa-gothic-sc.css" />
 ```
 
 2. 在样式表中使用请求的 Web 字体设置元素的样式：
@@ -21,7 +23,9 @@
   font-family: Arial, Helvetica, 'Sarasa Gothic SC', sans-serif;
 }
 ```
+
 &nbsp;&nbsp;&nbsp;或者在元素本身上使用内嵌样式：
+
 ```html
 <div style="font-family: Arial, Helvetica, 'Sarasa Gothic SC', sans-serif;">yourText</div>
 ```
