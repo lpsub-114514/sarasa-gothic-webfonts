@@ -213,8 +213,8 @@ export const possibleValues = {
       '-semibold': 'Semibold',
     },
     italic: {
-      '(blank)': '斜体を含む',
-      '-noitalic': '斜体を含まない',
+      '(blank)': 'イタリック体を含む',
+      '-noitalic': 'イタリック体を含まない',
     },
   },
 }

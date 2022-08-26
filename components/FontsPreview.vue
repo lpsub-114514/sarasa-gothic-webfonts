@@ -115,7 +115,18 @@ function firstUpperCase(s: string) {
 
   <h2>{{ noticeTexts[props.lang].explanation }}</h2>
 
-  <p>{{ noticeTexts[props.lang].format }}:&nbsp;{{ props.font }}{{ noticeTexts[props.lang].formatDetail }}</p>
+  <table class="format-example-table">
+    <tbody>
+      <tr>
+        <td>{{ noticeTexts[props.lang].format }}:&nbsp;</td>
+        <td>{{ props.font }}{{ noticeTexts[props.lang].formatDetail }}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>sarasa-gothic-sc-bold-noitalic.css</td>
+      </tr>
+    </tbody>
+  </table>
 
   <ol>
     <li>
@@ -176,5 +187,20 @@ function firstUpperCase(s: string) {
 
 .font-config {
   margin-top: 5px;
+}
+
+.format-example-table td {
+  border: none;
+  padding: 0;
+}
+
+.format-example-table tr {
+  background: none;
+  border: none;
+  transition: none;
+}
+
+.format-example-table tr:nth-child(2n) {
+  background: none;
 }
 </style>

@@ -7,6 +7,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: 'About LPSub Fonts', link: '/en/' },
         { text: 'Getting Started', link: '/en/guide/getting-started' },
+        { text: 'FAQ', link: '/en/guide/FAQ' },
       ],
     },
     {
@@ -22,6 +23,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '关于 LPSub Fonts', link: '/zh-cn/' },
         { text: '开始使用', link: '/zh-cn/guide/getting-started' },
+        { text: 'FAQ', link: '/zh-cn/guide/FAQ' },
       ],
     },
     {
@@ -37,6 +39,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '關於 LPSub Fonts', link: '/zh-hk/' },
         { text: '開始使用', link: '/zh-hk/guide/getting-started' },
+        { text: 'FAQ', link: '/zh-hk/guide/FAQ' },
       ],
     },
     {
@@ -52,6 +55,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '關於 LPSub Fonts', link: '/zh-tw/' },
         { text: '開始使用', link: '/zh-tw/guide/getting-started' },
+        { text: 'FAQ', link: '/zh-tw/guide/FAQ' },
       ],
     },
     {
@@ -67,6 +71,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: 'LPSub Fonts について', link: '/jp/' },
         { text: '開始', link: '/jp/guide/getting-started' },
+        { text: 'FAQ', link: '/jp/guide/FAQ' },
       ],
     },
     {
