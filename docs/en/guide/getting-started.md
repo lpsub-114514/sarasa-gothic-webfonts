@@ -2,7 +2,7 @@
 
 ## Overview
 
-たった2ステップで LPSub Fonts API を使い始めることができます：
+Start using the LPSub Fonts API in just two steps:
 
 1. Add a font link to request the required web font:
 
