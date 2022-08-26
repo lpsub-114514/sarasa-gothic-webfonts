@@ -21,6 +21,11 @@ export const noticeTexts = {
     area: 'Region',
     fontWeight: 'Font Weight',
     italic: 'Additional Options',
+    FAQ: [{
+        question: 'Why are there subset CSS files?',
+        answer: 'Answer: Because the complete single CSS file is relatively large, the largest one is 1.1MB, so the subsetted CSS files and CSS files without italics are given.',
+      },
+    ],
   },
 
   'zh-cn': {
@@ -35,6 +40,12 @@ export const noticeTexts = {
     area: '地区',
     fontWeight: '字重',
     italic: '附加选项',
+    FAQ: [
+      {
+        question: '为什么会有子集化的 CSS 文件？',
+        answer: '答：因为完整的单个 CSS 文件比较大，最大的一个文件有 1.1MB，所以给出了子集化的 CSS 文件和去掉斜体的 CSS 文件。',
+      },
+    ],
   },
 
   'zh-hk': {
@@ -49,6 +60,12 @@ export const noticeTexts = {
     area: '地區',
     fontWeight: '字重',
     italic: '附加選項',
+    FAQ: [
+      {
+        question: '為什麼會有子集化的 CSS 文件？',
+        answer: '答：因為完整的單個 CSS 文件比較大，最大的一個文件有 1.1MB，所以給出了子集化的 CSS 文件和去掉斜體的 CSS 文件。',
+      },
+    ],
   },
 
   'zh-tw': {
@@ -63,9 +80,15 @@ export const noticeTexts = {
     area: '地區',
     fontWeight: '字重',
     italic: '附加選項',
+    FAQ: [
+      {
+        question: '為什麼會有子集化的 CSS 文件？',
+        answer: '答：因為完整的單個 CSS 文件比較大，最大的一個文件有 1.1MB，所以給出了子集化的 CSS 文件和去掉斜體的 CSS 文件。',
+      },
+    ],
   },
 
-  'jp': {
+  'ja': {
     example: '例',
     fontSelection: 'フォントの選択',
     fontStyleSelection: 'フォント スタイルの選択 (css の font-style)',
@@ -77,6 +100,12 @@ export const noticeTexts = {
     area: '地域',
     fontWeight: 'フォントの太さ',
     italic: '追加オプション',
+    FAQ: [
+      {
+        question: 'なぜサブセット CSS ファイルがあるのですか?',
+        answer: '回答：完全な単一の CSS ファイルは比較的大きく、最大のものは 1.1MB なので、サブセット化した CSS ファイルやイタリック体のない CSS ファイルを与えています。',
+      },
+    ],
   },
 }
 
@@ -191,7 +220,7 @@ export const possibleValues = {
     },
   },
 
-  'jp': {
+  'ja': {
     style: {
       '-gothic': 'ゴシック',
     },

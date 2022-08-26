@@ -134,7 +134,7 @@ function firstUpperCase(s: string) {
       <table>
         <tbody>
           <tr v-for="style in Object.keys(possibleValues[props.lang].style)">
-            <td style="text-align: center;">{{ style }}</td>
+            <td style="text-align: center;"><code>{{ style }}</code></td>
             <td style="text-align: center;">{{ possibleValues[props.lang].style[style] }}</td>
           </tr>
         </tbody>
@@ -145,7 +145,7 @@ function firstUpperCase(s: string) {
       <table>
         <tbody>
           <tr v-for="area in Object.keys(possibleValues[props.lang].area)">
-            <td style="text-align: center;">{{ area }}</td>
+            <td style="text-align: center;"><code>{{ area }}</code></td>
             <td style="text-align: center;">{{ possibleValues[props.lang].area[area] }}</td>
           </tr>
         </tbody>
@@ -174,6 +174,11 @@ function firstUpperCase(s: string) {
       </table>
     </li>
   </ol>
+
+  <span v-for="(faq, index) in noticeTexts[props.lang].FAQ">
+    <ol :start="index + 1"><li>{{ faq.question }}</li></ol>
+    <p>&nbsp;{{ faq.answer }}</p>
+  </span>
 </template>
 
 <style>

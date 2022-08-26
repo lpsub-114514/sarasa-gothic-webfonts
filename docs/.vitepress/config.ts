@@ -7,7 +7,6 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: 'About LPSub Fonts', link: '/en/' },
         { text: 'Getting Started', link: '/en/guide/getting-started' },
-        { text: 'FAQ', link: '/en/guide/FAQ' },
       ],
     },
     {
@@ -23,7 +22,6 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '关于 LPSub Fonts', link: '/zh-cn/' },
         { text: '开始使用', link: '/zh-cn/guide/getting-started' },
-        { text: 'FAQ', link: '/zh-cn/guide/FAQ' },
       ],
     },
     {
@@ -39,7 +37,6 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '關於 LPSub Fonts', link: '/zh-hk/' },
         { text: '開始使用', link: '/zh-hk/guide/getting-started' },
-        { text: 'FAQ', link: '/zh-hk/guide/FAQ' },
       ],
     },
     {
@@ -55,7 +52,6 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '關於 LPSub Fonts', link: '/zh-tw/' },
         { text: '開始使用', link: '/zh-tw/guide/getting-started' },
-        { text: 'FAQ', link: '/zh-tw/guide/FAQ' },
       ],
     },
     {
@@ -65,51 +61,45 @@ const sidebar: DefaultTheme.sidebar = {
       ],
     }
   ],
-  '/jp/': [
+  '/ja/': [
     {
       text: '導入',
       items: [
-        { text: 'LPSub Fonts について', link: '/jp/' },
-        { text: '開始', link: '/jp/guide/getting-started' },
-        { text: 'FAQ', link: '/jp/guide/FAQ' },
+        { text: 'LPSub Fonts について', link: '/ja/' },
+        { text: '開始', link: '/ja/guide/getting-started' },
       ],
     },
     {
       text: '使用説明書',
       items: [
-        { text: '更紗ゴシック', link: '/jp/explain/Sarasa-Gothic' },
+        { text: '更紗ゴシック', link: '/ja/explain/Sarasa-Gothic' },
       ],
     }
   ],
 }
 
 export default defineConfig({
-  title: 'LPSub Fonts',
+  title: 'LPSub Fonts API',
   description: 'LPSub Fonts Document',
   locales: {
     '/en/': {
       lang: 'en',
-      title: 'LPSub Fonts',
       description: 'LPSub Fonts Document',
     },
     '/zh-cn/': {
       lang: 'zh-CN',
-      title: 'LPSub Fonts',
       description: 'LPSub Fonts 文档',
     },
     '/zh-hk/': {
       lang: 'zh-HK',
-      title: 'LPSub Fonts',
       description: 'LPSub Fonts 文檔',
     },
     '/zh-tw/': {
       lang: 'zh-TW',
-      title: 'LPSub Fonts',
       description: 'LPSub Fonts 文檔',
     },
-    '/jp/': {
+    '/ja/': {
       lang: 'ja',
-      title: 'LPSub Fonts',
       description: 'LPSub Fonts ドキュメント',
     },
   },
@@ -122,7 +112,7 @@ export default defineConfig({
         { text: '简体中文', link: '/zh-cn/' },
         { text: '繁體中文（香港）', link: '/zh-hk/' },
         { text: '繁體中文（台灣）', link: '/zh-tw/' },
-        { text: '日本語', link: '/jp/' },
+        { text: '日本語', link: '/ja/' },
       ],
     }
   },
