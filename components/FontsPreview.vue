@@ -6,16 +6,18 @@ import {
   showJapanese,
   examples,
   possibleValues,
+  noticeTexts,
 } from '../data/fonts'
 
 const props = defineProps<{
   font: string
+  lang: keyof typeof possibleValues
 }>()
 
-const chosenStyle = ref<keyof typeof possibleValues.style>('-gothic')
-const chosenArea = ref<keyof typeof possibleValues.area>('-sc')
-const chosenWeight = ref<keyof typeof possibleValues.weight>('(留空)')
-const chosenItalic = ref<keyof typeof possibleValues.italic>('(留空)')
+const chosenStyle = ref<keyof typeof possibleValues.en.style>('-gothic')
+const chosenArea = ref<keyof typeof possibleValues.en.area>('-sc')
+const chosenWeight = ref<keyof typeof possibleValues.en.weight>('(blank)')
+const chosenItalic = ref<keyof typeof possibleValues.en.italic>('(blank)')
 
 const chosenFontStyle = ref('normal')
 
@@ -26,10 +28,10 @@ const cssFilename = computed(() => {
     chosenArea.value
   ]
 
-  if (chosenWeight.value !== '(留空)')
+  if (chosenWeight.value !== '(blank)')
     filenameArgs.push(chosenWeight.value)
 
-  if (chosenItalic.value !== '(留空)')
+  if (chosenItalic.value !== '(blank)')
     filenameArgs.push(chosenItalic.value)
   
   return filenameArgs.join('')
@@ -47,7 +49,7 @@ const previewTextStyle = computed(() => {
     chosenArea.value.substring(1).toUpperCase(),
   ]
 
-  if (chosenWeight.value !== '(留空)')
+  if (chosenWeight.value !== '(blank)')
     fontFamily.push(firstUpperCase(chosenWeight.value.substring(1)))
 
   return {
@@ -61,27 +63,27 @@ function firstUpperCase(s: string) {
 }
 </script>
 <template>
-  <h2>示例</h2>
+  <h2>{{ noticeTexts[props.lang].example }}</h2>
 
   <div class="font-config">
-    字体选择：{{ $props.font }}
+    {{ noticeTexts[props.lang].fontSelection }}:&nbsp;{{ $props.font }}
     <select v-model="chosenStyle" name="style-select" class="font-selector">
-      <option v-for="style in Object.keys(possibleValues.style)" :value="style">{{ style }}</option>
+      <option v-for="style in Object.keys(possibleValues[props.lang].style)" :value="style">{{ style }}</option>
     </select>
     <select v-model="chosenArea" name="area-select" class="font-selector">
-      <option v-for="area in Object.keys(possibleValues.area)" :value="area">{{ area }}</option>
+      <option v-for="area in Object.keys(possibleValues[props.lang].area)" :value="area">{{ area }}</option>
     </select>
     <select v-model="chosenWeight" name="weight-select" class="font-selector">
-      <option v-for="weight in Object.keys(possibleValues.weight)" :value="weight">{{ weight === '(留空)' ? '' : weight }}</option>
+      <option v-for="weight in Object.keys(possibleValues[props.lang].weight)" :value="weight">{{ weight === '(blank)' ? '' : weight }}</option>
     </select>
     <select v-model="chosenItalic" name="italic-select" class="font-selector">
-      <option v-for="italic in Object.keys(possibleValues.italic)" :value="italic">{{ italic === '(留空)' ? '' : italic }}</option>
+      <option v-for="italic in Object.keys(possibleValues[props.lang].italic)" :value="italic">{{ italic === '(blank)' ? '' : italic }}</option>
     </select>
     .css
   </div>
 
   <div class="font-config">
-    <label for="choose-font-style">字形选择 (css 中的 font-style)：</label>
+    <label for="choose-font-style">{{ noticeTexts[props.lang].fontStyleSelection }}:&nbsp;</label>
     <select v-model="chosenFontStyle" name="font-style-select" id="choose-font-style" class="font-selector">
       <option value="normal">normal</option>
       <option value="italic">italic</option>
@@ -94,51 +96,51 @@ function firstUpperCase(s: string) {
     <span v-if="showTraditionalChinese.includes(chosenArea.substring(1).toUpperCase())">{{ examples.traditionalChinese }}</span>
   </p>
 
-  <h2>说明</h2>
+  <h2>{{ noticeTexts[props.lang].explanation }}</h2>
 
-  <p>格式：{{ '<字体名称><字体样式><地区><字重><斜体>.css' }}</p>
+  <p>{{ noticeTexts[props.lang].format }}:&nbsp;{{ noticeTexts[props.lang].formatDetail }}</p>
 
   <ol>
     <li>
-      字体样式
+      {{ noticeTexts[props.lang].fontStyle }}
       <table>
         <tbody>
-          <tr v-for="style in Object.keys(possibleValues.style)">
+          <tr v-for="style in Object.keys(possibleValues[props.lang].style)">
             <td style="text-align: center;">{{ style }}</td>
-            <td style="text-align: center;">{{ possibleValues.style[style] }}</td>
+            <td style="text-align: center;">{{ possibleValues[props.lang].style[style] }}</td>
           </tr>
         </tbody>
       </table>
     </li>
     <li>
-      地区
+      {{ noticeTexts[props.lang].area }}
       <table>
         <tbody>
-          <tr v-for="area in Object.keys(possibleValues.area)">
+          <tr v-for="area in Object.keys(possibleValues[props.lang].area)">
             <td style="text-align: center;">{{ area }}</td>
-            <td style="text-align: center;">{{ possibleValues.area[area] }}</td>
+            <td style="text-align: center;">{{ possibleValues[props.lang].area[area] }}</td>
           </tr>
         </tbody>
       </table>
     </li>
     <li>
-      字重
+      {{ noticeTexts[props.lang].fontWeight }}
       <table>
         <tbody>
-          <tr v-for="weight in Object.keys(possibleValues.weight)">
+          <tr v-for="weight in Object.keys(possibleValues[props.lang].weight)">
             <td style="text-align: center;">{{ weight }}</td>
-            <td style="text-align: center;">{{ possibleValues.weight[weight] }}</td>
+            <td style="text-align: center;">{{ possibleValues[props.lang].weight[weight] }}</td>
           </tr>
         </tbody>
       </table>
     </li>
     <li>
-      斜体
+      {{ noticeTexts[props.lang].italic }}
       <table>
         <tbody>
-          <tr v-for="italic in Object.keys(possibleValues.italic)">
+          <tr v-for="italic in Object.keys(possibleValues[props.lang].italic)">
             <td style="text-align: center;">{{ italic }}</td>
-            <td style="text-align: center;">{{ possibleValues.italic[italic] }}</td>
+            <td style="text-align: center;">{{ possibleValues[props.lang].italic[italic] }}</td>
           </tr>
         </tbody>
       </table>
