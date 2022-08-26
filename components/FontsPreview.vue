@@ -156,7 +156,7 @@ function firstUpperCase(s: string) {
       <table>
         <tbody>
           <tr v-for="italic in Object.keys(possibleValues[props.lang].italic)">
-            <td style="text-align: center;">{{ italic }}</td>
+            <td style="text-align: center;" v-html="italic === '(blank)' ? italic : `<code>${italic}</code>`"></td>
             <td style="text-align: center;">{{ possibleValues[props.lang].italic[italic] }}</td>
           </tr>
         </tbody>
