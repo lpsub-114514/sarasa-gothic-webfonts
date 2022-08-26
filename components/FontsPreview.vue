@@ -31,7 +31,7 @@ const cssFilename = computed(() => {
   ]
 
   if (chosenWeight.value !== '(blank)')
-    filenameArgs.push(chosenWeight.value.replace(/`/g, ''))
+    filenameArgs.push(chosenWeight.value)
 
   if (chosenItalic.value !== '(blank)')
     filenameArgs.push(chosenItalic.value)
@@ -51,8 +51,12 @@ const previewTextStyle = computed(() => {
     chosenArea.value.substring(1).toUpperCase(),
   ]
 
-  if (chosenWeight.value !== '(blank)')
-    fontFamily.push(firstUpperCase(chosenWeight.value.replace(/`/g, '').substring(1)))
+  if (chosenWeight.value !== '(blank)') {
+    if (chosenWeight.value === '-extralight')
+      fontFamily.push('ExtraLight')
+    else
+      fontFamily.push(firstUpperCase(chosenWeight.value.substring(1)))
+  }
 
   return {
     fontFamily: `Arial, Helvetica, '${fontFamily.join(' ')}', sans-serif`,
@@ -62,7 +66,6 @@ const previewTextStyle = computed(() => {
 })
 
 const previewAreas = computed(() => Object.keys(possibleValues[props.lang].area).filter((v) => !ignoreArea.includes(v)))
-const previewWeight = computed(() => Object.keys(possibleValues[props.lang].weight).map((v) => v.replace(/`/g, '')))
 
 function firstUpperCase(s: string) {
   return s.replace(/^\S/, (s) => s.toUpperCase())
@@ -80,7 +83,7 @@ function firstUpperCase(s: string) {
       <option v-for="area in previewAreas" :value="area">{{ area }}</option>
     </select>
     <select v-model="chosenWeight" name="weight-select" class="font-selector">
-      <option v-for="weight in previewWeight" :value="weight">{{ weight === '(blank)' ? '' : weight }}</option>
+      <option v-for="weight in Object.keys(possibleValues[props.lang].weight)" :value="weight">{{ weight === '(blank)' ? '' : weight }}</option>
     </select>
     <select v-model="chosenItalic" name="italic-select" class="font-selector">
       <option v-for="italic in Object.keys(possibleValues[props.lang].italic)" :value="italic">{{ italic === '(blank)' ? '' : italic }}</option>
@@ -107,7 +110,7 @@ function firstUpperCase(s: string) {
   <p :style="previewTextStyle">
     <span v-if="showJapanese.includes(chosenArea.substring(1).toUpperCase())" lang="ja">{{ examples.japanese }}</span>
     <span v-if="showSimplifiedChinese.includes(chosenArea.substring(1).toUpperCase())" lang="zh-CN">{{ examples.simplifiedChinese }}</span>
-    <span v-if="showTraditionalChinese.includes(chosenArea.substring(1).toUpperCase())" lang="zh-HK">{{ examples.traditionalChinese }}</span>
+    <span v-if="showTraditionalChinese.includes(chosenArea.substring(1).toUpperCase())" lang="zh-TW">{{ examples.traditionalChinese }}</span>
   </p>
 
   <h2>{{ noticeTexts[props.lang].explanation }}</h2>
@@ -142,7 +145,7 @@ function firstUpperCase(s: string) {
       <table>
         <tbody>
           <tr v-for="weight in Object.keys(possibleValues[props.lang].weight)">
-            <td style="text-align: center;">{{ weight }}</td>
+            <td style="text-align: center;" v-html="weight === '(blank)' ? weight : `<code>${weight}</code>`"></td>
             <td style="text-align: center;">{{ possibleValues[props.lang].weight[weight] }}</td>
           </tr>
         </tbody>

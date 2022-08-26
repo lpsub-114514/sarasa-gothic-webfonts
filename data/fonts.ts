@@ -1,5 +1,5 @@
 export const showSimplifiedChinese = ['SC', 'CN']
-export const showTraditionalChinese = ['HC', 'TC', 'TW', 'HK']
+export const showTraditionalChinese = ['HC', 'TC', 'TW', 'HK', 'CL']
 export const showJapanese = ['JP', 'J']
 export const ignoreArea = ['-cn', '-hk', '-jp', '-tw']
 export const examples = {
@@ -80,7 +80,7 @@ export const noticeTexts = {
   },
 }
 
-// <字体名称><字体样式><地区><字重><noitalic>.css
+// <字体名称><字体样式><地区><字重><附加选项>.css
 
 export const possibleValues = {
   'en': {
@@ -95,14 +95,14 @@ export const possibleValues = {
       '-cl': 'Classical Chinese Characters',
       '-j': 'Japanese Kanji',
       '-jp': 'Japanese Kanji, Japanese Subset',
-      '-tw': 'Taiwanese Chinese characters',
-      '-tc': 'Taiwanese Chinese characters',
+      '-tw': 'Taiwanese Chinese Characters',
+      '-tc': 'Taiwanese Chinese Characters, Taiwanese Chinese Subset',
     },
     weight: {
       '(blank)': 'Regular & Bold',
-      '`-xlight`': 'Extralight',
-      '`-light`': 'Light',
-      '`-semibold`': 'Semibold',
+      '-extralight': 'Extralight',
+      '-light': 'Light',
+      '-semibold': 'Semibold',
     },
     italic: {
       '(blank)': 'Contain Italics',
@@ -123,13 +123,13 @@ export const possibleValues = {
       '-j': '日本汉字字形',
       '-jp': '日本汉字字形 日语子集化',
       '-tw': '台湾汉字字形',
-      '-tc': '台湾汉字字形',
+      '-tc': '台湾汉字字形 台湾中文子集化',
     },
     weight: {
       '(blank)': 'Regular & Bold',
-      '`-xlight`': 'Extralight',
-      '`-light`': 'Light',
-      '`-semibold`': 'Semibold',
+      '-extralight': 'Extralight',
+      '-light': 'Light',
+      '-semibold': 'Semibold',
     },
     italic: {
       '(blank)': '包含斜体',
@@ -150,13 +150,13 @@ export const possibleValues = {
       '-j': '日本漢字字形',
       '-jp': '日本漢字字形 日語子集化',
       '-tw': '台灣漢字字形',
-      '-tc': '台灣漢字字形',
+      '-tc': '台灣漢字字形 台灣中文子集化',
     },
     weight: {
       '(blank)': 'Regular & Bold',
-      '`-xlight`': 'Extralight',
-      '`-light`': 'Light',
-      '`-semibold`': 'Semibold',
+      '-extralight': 'Extralight',
+      '-light': 'Light',
+      '-semibold': 'Semibold',
     },
     italic: {
       '(blank)': '包含斜體',
@@ -177,13 +177,13 @@ export const possibleValues = {
       '-j': '日本漢字字形',
       '-jp': '日本漢字字形 日語子集化',
       '-tw': '台灣漢字字形',
-      '-tc': '台灣漢字字形',
+      '-tc': '台灣漢字字形 台灣中文子集化',
     },
     weight: {
       '(blank)': 'Regular & Bold',
-      '`-xlight`': 'Extralight',
-      '`-light`': 'Light',
-      '`-semibold`': 'Semibold',
+      '-extralight': 'Extralight',
+      '-light': 'Light',
+      '-semibold': 'Semibold',
     },
     italic: {
       '(blank)': '包含斜體',
@@ -204,13 +204,13 @@ export const possibleValues = {
       '-j': '日本語の漢字',
       '-jp': '日本語の漢字 日本語サブセット',
       '-tw': '台湾の漢字',
-      '-tc': '台湾の漢字',
+      '-tc': '台湾の漢字 台湾中国語サブセット',
     },
     weight: {
       '(blank)': 'Regular & Bold',
-      '`-xlight`': 'Extralight',
-      '`-light`': 'Light',
-      '`-semibold`': 'Semibold',
+      '-extralight': 'Extralight',
+      '-light': 'Light',
+      '-semibold': 'Semibold',
     },
     italic: {
       '(blank)': '斜体を含む',
