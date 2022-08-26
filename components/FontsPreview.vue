@@ -98,7 +98,7 @@ function firstUpperCase(s: string) {
 
   <h2>{{ noticeTexts[props.lang].explanation }}</h2>
 
-  <p>{{ noticeTexts[props.lang].format }}:&nbsp;{{ noticeTexts[props.lang].formatDetail }}</p>
+  <p>{{ noticeTexts[props.lang].format }}:&nbsp;{{ props.font }}{{ noticeTexts[props.lang].formatDetail }}</p>
 
   <ol>
     <li>
