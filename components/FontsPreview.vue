@@ -7,6 +7,7 @@ import {
   examples,
   possibleValues,
   noticeTexts,
+  ignoreArea,
 } from '../data/fonts'
 
 const props = defineProps<{
@@ -20,6 +21,7 @@ const chosenWeight = ref<keyof typeof possibleValues.en.weight>('(blank)')
 const chosenItalic = ref<keyof typeof possibleValues.en.italic>('(blank)')
 
 const chosenFontStyle = ref('normal')
+const chosenFontWeight = ref<'normal' | 'bold'>('normal')
 
 const cssFilename = computed(() => {
   const filenameArgs = [
@@ -29,7 +31,7 @@ const cssFilename = computed(() => {
   ]
 
   if (chosenWeight.value !== '(blank)')
-    filenameArgs.push(chosenWeight.value)
+    filenameArgs.push(chosenWeight.value.replace(/`/g, ''))
 
   if (chosenItalic.value !== '(blank)')
     filenameArgs.push(chosenItalic.value)
@@ -50,13 +52,17 @@ const previewTextStyle = computed(() => {
   ]
 
   if (chosenWeight.value !== '(blank)')
-    fontFamily.push(firstUpperCase(chosenWeight.value.substring(1)))
+    fontFamily.push(firstUpperCase(chosenWeight.value.replace(/`/g, '').substring(1)))
 
   return {
     fontFamily: `Arial, Helvetica, '${fontFamily.join(' ')}', sans-serif`,
     fontStyle: chosenFontStyle.value,
+    fontWeight: chosenFontWeight.value,
   }
 })
+
+const previewAreas = computed(() => Object.keys(possibleValues[props.lang].area).filter((v) => !ignoreArea.includes(v)))
+const previewWeight = computed(() => Object.keys(possibleValues[props.lang].weight).map((v) => v.replace(/`/g, '')))
 
 function firstUpperCase(s: string) {
   return s.replace(/^\S/, (s) => s.toUpperCase())
@@ -71,10 +77,10 @@ function firstUpperCase(s: string) {
       <option v-for="style in Object.keys(possibleValues[props.lang].style)" :value="style">{{ style }}</option>
     </select>
     <select v-model="chosenArea" name="area-select" class="font-selector">
-      <option v-for="area in Object.keys(possibleValues[props.lang].area)" :value="area">{{ area }}</option>
+      <option v-for="area in previewAreas" :value="area">{{ area }}</option>
     </select>
     <select v-model="chosenWeight" name="weight-select" class="font-selector">
-      <option v-for="weight in Object.keys(possibleValues[props.lang].weight)" :value="weight">{{ weight === '(blank)' ? '' : weight }}</option>
+      <option v-for="weight in previewWeight" :value="weight">{{ weight === '(blank)' ? '' : weight }}</option>
     </select>
     <select v-model="chosenItalic" name="italic-select" class="font-selector">
       <option v-for="italic in Object.keys(possibleValues[props.lang].italic)" :value="italic">{{ italic === '(blank)' ? '' : italic }}</option>
@@ -89,11 +95,19 @@ function firstUpperCase(s: string) {
       <option value="italic">italic</option>
     </select>
   </div>
+  
+  <div class="font-config">
+    <label for="choose-font-weight">{{ noticeTexts[props.lang].fontWeightSelection }}:&nbsp;</label>
+    <select v-model="chosenFontWeight" name="font-weight-select" id="choose-font-weight" class="font-selector">
+      <option value="normal">normal</option>
+      <option value="bold">bold</option>
+    </select>
+  </div>
 
   <p :style="previewTextStyle">
-    <span v-if="showJapanese.includes(chosenArea.substring(1).toUpperCase())">{{ examples.japanese }}</span>
-    <span v-if="showSimplifiedChinese.includes(chosenArea.substring(1).toUpperCase())">{{ examples.simplifiedChinese }}</span>
-    <span v-if="showTraditionalChinese.includes(chosenArea.substring(1).toUpperCase())">{{ examples.traditionalChinese }}</span>
+    <span v-if="showJapanese.includes(chosenArea.substring(1).toUpperCase())" lang="ja">{{ examples.japanese }}</span>
+    <span v-if="showSimplifiedChinese.includes(chosenArea.substring(1).toUpperCase())" lang="zh-CN">{{ examples.simplifiedChinese }}</span>
+    <span v-if="showTraditionalChinese.includes(chosenArea.substring(1).toUpperCase())" lang="zh-HK">{{ examples.traditionalChinese }}</span>
   </p>
 
   <h2>{{ noticeTexts[props.lang].explanation }}</h2>

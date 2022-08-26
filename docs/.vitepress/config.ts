@@ -103,7 +103,7 @@ export default defineConfig({
       description: 'LPSub Fonts 文檔',
     },
     '/jp/': {
-      lang: 'jp',
+      lang: 'ja',
       title: 'LPSub Fonts',
       description: 'LPSub Fonts ドキュメント',
     },
