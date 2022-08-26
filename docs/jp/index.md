@@ -1,3 +1,3 @@
-# LPSub Fonts　について
+# LPSub Fonts について
 
-[Google Fonts](https://developers.google.com/fonts/docs/getting_started) 有 Noto 系列，还有 Ubuntu 等一堆 webfont 可以调用，但是 Notorious Sans 系列在浏览器里面渲染效果没有更纱好，所以就有了这个项目。
+[Google Fonts](https://developers.google.com/fonts/docs/getting_started) には Noto シリーズや、Ubuntu などのウェブフォントがたくさんあり、呼び出すことができますが、Notorious Sans シリーズのブラウザでのレンダリング効果は更紗ゴシックに及ばないため、このプロジェクトがあります。
