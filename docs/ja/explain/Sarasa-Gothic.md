@@ -6,10 +6,11 @@ import mondai from '../../../components/FontsPreview_p3.vue';
 
 # 更紗ゴシック使用説明書
 
-
+<ClientOnly>
 ## 例
 <tatoeba font="sarasa" lang="ja" />
 ## 説明
 <setsumei font="sarasa" lang="ja" />
 ## Q&A
 <mondai font="sarasa" lang="ja" />
+</ClientOnly>
