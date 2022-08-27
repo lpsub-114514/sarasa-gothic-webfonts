@@ -1,15 +1,25 @@
 <script setup>
 import tatoeba from '../../../components/FontsPreview.vue';
-import setsumei from '../../../components/FontsPreview_p2.vue';
-import mondai from '../../../components/FontsPreview_p3.vue';
+import setsumei from '../../../components/Explanation.vue';
+import mondai from '../../../components/FAQ.vue';
 </script>
 
 # Sarasa Gothic instructions for Use
-<ClientOnly>
+
 ## Example
-<tatoeba font="sarasa" lang="en" />
+
+<ClientOnly>
+  <tatoeba font="sarasa" lang="en" />
+</ClientOnly>
+
 ## Explanation
-<setsumei font="sarasa" lang="en" />
+
+<ClientOnly>
+  <setsumei font="sarasa" lang="en" />
+</ClientOnly>
+
 ## Q&A
-<mondai font="sarasa" lang="en" />
+
+<ClientOnly>
+  <mondai lang="en" />
 </ClientOnly>

@@ -1,16 +1,25 @@
 <script setup>
 import tatoeba from '../../../components/FontsPreview.vue';
-import setsumei from '../../../components/FontsPreview_p2.vue';
-import mondai from '../../../components/FontsPreview_p3.vue';
+import setsumei from '../../../components/Explanation.vue';
+import mondai from '../../../components/FAQ.vue';
 </script>
 
 # 更紗ゴシック使用説明書
 
-<ClientOnly>
 ## 例
-<tatoeba font="sarasa" lang="ja" />
+
+<ClientOnly>
+  <tatoeba font="sarasa" lang="ja" />
+</ClientOnly>
+
 ## 説明
-<setsumei font="sarasa" lang="ja" />
+
+<ClientOnly>
+  <setsumei font="sarasa" lang="ja" />
+</ClientOnly>
+
 ## Q&A
-<mondai font="sarasa" lang="ja" />
+
+<ClientOnly>
+  <mondai lang="ja" />
 </ClientOnly>

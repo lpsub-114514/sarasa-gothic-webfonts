@@ -124,19 +124,4 @@ function firstUpperCase(s: string) {
 .font-config {
   margin-top: 5px;
 }
-
-.format-example-table td {
-  border: none;
-  padding: 0;
-}
-
-.format-example-table tr {
-  background: none;
-  border: none;
-  transition: none;
-}
-
-.format-example-table tr:nth-child(2n) {
-  background: none;
-}
 </style>

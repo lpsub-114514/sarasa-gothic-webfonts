@@ -1,15 +1,25 @@
 <script setup>
 import tatoeba from '../../../components/FontsPreview.vue';
-import setsumei from '../../../components/FontsPreview_p2.vue';
-import mondai from '../../../components/FontsPreview_p3.vue';
+import setsumei from '../../../components/Explanation.vue';
+import mondai from '../../../components/FAQ.vue';
 </script>
 
 # 更紗黑體使用說明
-<ClientOnly>
+
 ## 範例
-<tatoeba font="sarasa" lang="zh-tw" />
+
+<ClientOnly>
+  <tatoeba font="sarasa" lang="zh-tw" />
+</ClientOnly>
+
 ## 說明
-<setsumei font="sarasa" lang="zh-tw" />
+
+<ClientOnly>
+  <setsumei font="sarasa" lang="zh-tw" />
+</ClientOnly>
+
 ## Q&A
-<mondai font="sarasa" lang="zh-tw" />
+
+<ClientOnly>
+  <mondai lang="zh-tw" />
 </ClientOnly>
