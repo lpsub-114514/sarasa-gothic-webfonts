@@ -6,3 +6,11 @@
 
 - 本文档仓库地址：<https://github.com/lpsub-114514/sarasa-gothic-webfonts>
 - 字体子集化和 webfont 化的工具：<https://github.com/Lambholl/webfont-seperator>
+
+> Present by LPSub<br>
+> Contributors: <br>
+>&nbsp;&nbsp;Lambholl<br>
+>&nbsp;&nbsp;Rotten-LKZ<br>
+>&nbsp;&nbsp;Pyrfire<br>
+>&nbsp;&nbsp;NPCHK<br>
+>&nbsp;&nbsp;M.B.F.

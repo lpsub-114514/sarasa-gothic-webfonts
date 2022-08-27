@@ -6,3 +6,11 @@
 
 - The repository address of this document: <https://github.com/lpsub-114514/sarasa-gothic-webfonts>
 - Tools for generating font subset and webfont: <https://github.com/Lambholl/webfont-seperator>
+
+> Present by LPSub<br>
+> Contributors: <br>
+>&nbsp;&nbsp;Lambholl<br>
+>&nbsp;&nbsp;Rotten-LKZ<br>
+>&nbsp;&nbsp;Pyrfire<br>
+>&nbsp;&nbsp;NPCHK<br>
+>&nbsp;&nbsp;M.B.F.

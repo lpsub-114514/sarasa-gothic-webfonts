@@ -2,9 +2,9 @@
 
 ## 概要
 
-たった2ステップで LPSub Fonts API を使い始めることができます：
+LPSub Fonts API は以下の 2 つのステップだけで使い始めることができます。
 
-1. 必要な Web フォントを要求するためのフォントリンクを追加します：
+1. 目的のウェブフォントをリクエストするためのスタイルシートのリンクを追加します。
 
 ```css
 @import url("//fonts.lpsub.com/css/sarasa-gothic-sc.css");
@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="//fonts.lpsub.com/css/sarasa-gothic-sc.css" />
 ```
 
-2. スタイルシートで要求された Web フォントで要素をスタイルします：
+2. リクエストされたウェブフォントの要素のスタイルをスタイルシート
 
 ```css
 .yourClassName {
@@ -24,14 +24,15 @@
 }
 ```
 
-&nbsp;&nbsp;&nbsp;または、要素自体にインラインスタイルを使用します：
+&nbsp;&nbsp;&nbsp;で設定します。<br>
+&nbsp;&nbsp;&nbsp;または、要素自体にインライン スタイルを付けます。
 
 ```html
 <div style="font-family: Arial, Helvetica, 'Sarasa Gothic SC', sans-serif;">yourText</div>
 ```
 
 ::: tip
-注意: CSSスタイルを使ってウェブフォントを指定する場合、予期せぬ動作を避けるために、常に少なくとも1つのフォールバックウェブセーフフォントをリストアップしてください。特に、`serif` や `sans-serif` のようなCSS一般フォント名をリストの最後に追加して、必要に応じてブラウザがデフォルトのフォントにフォールバックできるようにします。
+注: CSS スタイルでウェブフォントを指定する場合は、予期しない動作を避けるため、常にウェブセーフ フォントを少なくとも 1 つリストするようにしてください。特に、`serif`や`sans-serif`のような CSS 汎用フォント名をリストの末尾に追加することで、必要に応じてブラウザはデフォルトのフォントにフォールバックできます。
 :::
 
 使用できるフォントの一覧については、[フォント ファイルの説明](../explain/Sarasa-Gothic.md) を参照してください。

@@ -103,7 +103,7 @@ export const noticeTexts = {
     FAQ: [
       {
         question: 'なぜサブセット CSS ファイルがあるのですか。',
-        answer: '完全な CSS ファイルのサイズが大きいだから、サブセット化され、Italic体の部分を削除して与えています。',
+        answer: '完全なシングルのCSSファイルに最も大きなのが 1.1MB に登り、大きすぎるだから、サブセット化したそして斜体を抜いておいたの CSS ファイルをあげってきた。',
       },
     ],
   },
@@ -125,7 +125,7 @@ export const possibleValues = {
       '-j': 'Japanese Kanji',
       '-jp': 'Japanese Kanji, Japanese Subset',
       '-tw': 'Taiwanese Chinese Characters',
-      '-tc': 'Taiwanese Chinese Characters, Taiwanese Chinese Subset',
+      '-tc': 'Taiwanese Chinese Characters, Traditional Chinese Subset',
     },
     weight: {
       '(blank)': 'Regular & Bold',
@@ -152,7 +152,7 @@ export const possibleValues = {
       '-j': '日本汉字字形',
       '-jp': '日本汉字字形 日语子集化',
       '-tw': '台湾汉字字形',
-      '-tc': '台湾汉字字形 台湾中文子集化',
+      '-tc': '台湾汉字字形 繁体中文子集化',
     },
     weight: {
       '(blank)': 'Regular & Bold',
@@ -179,7 +179,7 @@ export const possibleValues = {
       '-j': '日本漢字字形',
       '-jp': '日本漢字字形 日語子集化',
       '-tw': '台灣漢字字形',
-      '-tc': '台灣漢字字形 台灣中文子集化',
+      '-tc': '台灣漢字字形 繁體中文子集化',
     },
     weight: {
       '(blank)': 'Regular & Bold',
@@ -206,7 +206,7 @@ export const possibleValues = {
       '-j': '日本漢字字形',
       '-jp': '日本漢字字形 日語子集化',
       '-tw': '台灣漢字字形',
-      '-tc': '台灣漢字字形 台灣中文子集化',
+      '-tc': '台灣漢字字形 繁體中文子集化',
     },
     weight: {
       '(blank)': 'Regular & Bold',
@@ -233,7 +233,7 @@ export const possibleValues = {
       '-j': '日本語の漢字',
       '-jp': '日本語の漢字 日本語サブセット',
       '-tw': '台湾の漢字',
-      '-tc': '台湾の漢字 台湾中国語サブセット',
+      '-tc': '台湾の漢字 繁体字中国語サブセット',
     },
     weight: {
       '(blank)': 'Regular & Bold',
