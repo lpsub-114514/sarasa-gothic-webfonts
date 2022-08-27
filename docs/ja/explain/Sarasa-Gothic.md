@@ -4,4 +4,6 @@ import FontsPreview from '../../../components/FontsPreview.vue'
 
 # 更紗ゴシック使用説明書
 
-<FontsPreview font="sarasa" lang="ja" />
+<ClientOnly>
+  <FontsPreview font="sarasa" lang="ja" />
+</ClientOnly>

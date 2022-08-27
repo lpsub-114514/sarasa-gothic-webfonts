@@ -4,4 +4,6 @@ import FontsPreview from '../../../components/FontsPreview.vue'
 
 # Sarasa Gothic instructions for Use
 
-<FontsPreview font="sarasa" lang="en" />
+<ClientOnly>
+  <FontsPreview font="sarasa" lang="en" />
+</ClientOnly>

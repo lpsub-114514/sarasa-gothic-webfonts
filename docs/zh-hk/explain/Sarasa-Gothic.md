@@ -4,4 +4,6 @@ import FontsPreview from '../../../components/FontsPreview.vue'
 
 # 更紗黑體使用說明
 
-<FontsPreview font="sarasa" lang="zh-hk" />
+<ClientOnly>
+  <FontsPreview font="sarasa" lang="zh-hk" />
+</ClientOnly>
