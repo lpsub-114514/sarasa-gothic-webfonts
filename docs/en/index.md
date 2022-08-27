@@ -4,5 +4,5 @@
 
 ## Related Links
 
-1. The repository address of this document: <https://github.com/lpsub-114514/sarasa-gothic-webfonts>
-2. Tools for generating font subset and webfont: <https://github.com/Lambholl/webfont-seperator>
+- The repository address of this document: <https://github.com/lpsub-114514/sarasa-gothic-webfonts>
+- Tools for generating font subset and webfont: <https://github.com/Lambholl/webfont-seperator>

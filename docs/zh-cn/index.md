@@ -4,5 +4,5 @@
 
 ## 相关链接
 
-1. 本文档仓库地址：<https://github.com/lpsub-114514/sarasa-gothic-webfonts>
-2. 字体子集化和 webfont 化的工具：<https://github.com/Lambholl/webfont-seperator>
+- 本文档仓库地址：<https://github.com/lpsub-114514/sarasa-gothic-webfonts>
+- 字体子集化和 webfont 化的工具：<https://github.com/Lambholl/webfont-seperator>

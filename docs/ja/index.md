@@ -4,5 +4,5 @@
 
 ## 関連リンク
 
-1. 本書リポジトリアドレス：<https://github.com/lpsub-114514/sarasa-gothic-webfonts>
-2. フォントサブセット・ウェブフォント用ツール：<https://github.com/Lambholl/webfont-seperator>
+- 本書リポジトリアドレス：<https://github.com/lpsub-114514/sarasa-gothic-webfonts>
+- フォントサブセット・ウェブフォント用ツール：<https://github.com/Lambholl/webfont-seperator>
