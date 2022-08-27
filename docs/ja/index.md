@@ -1,6 +1,6 @@
 # LPSub Fonts について
 
-[Google Fonts](https://developers.google.com/fonts/docs/getting_started) には Noto シリーズや、Ubuntu などのウェブフォントがたくさんあり、呼び出すことができますが、Notorious Sans シリーズのブラウザでのレンダリング効果は更紗ゴシックに及ばないため、このプロジェクトがあります。
+[Google Fonts](https://developers.google.com/fonts/docs/getting_started) には Noto シリーズや、Ubuntu などのウェブフォントがたくさんあり、呼び出すことができますが、Notorious Sans シリーズのブラウザでのレンダリング効果は更紗ゴシックに及ばないため、このプロジェクトが作る。
 
 ## 関連リンク
 

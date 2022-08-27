@@ -69,7 +69,7 @@ export const noticeTexts = {
   },
 
   'zh-tw': {
-    example: '示例',
+    example: '範例',
     fontSelection: '字體選擇',
     fontStyleSelection: '字形選擇 (css 中的 font-style)',
     fontWeightSelection: '字重選擇 (css 中的 font-weight)',
@@ -93,7 +93,7 @@ export const noticeTexts = {
     fontSelection: 'フォントの選択',
     fontStyleSelection: 'フォント スタイルの選択 (css の font-style)',
     fontWeightSelection: 'フォントの太さの選択 (css の font-weight)',
-    explanation: '例証する',
+    explanation: '説明',
     format: 'フォーマット',
     formatDetail: '<フォント スタイル><地域><フォントの太さ><追加オプション>.css',
     fontStyle: 'フォント スタイル',
@@ -102,8 +102,8 @@ export const noticeTexts = {
     italic: '追加オプション',
     FAQ: [
       {
-        question: 'なぜサブセット CSS ファイルがあるのですか?',
-        answer: '完全な単一の CSS ファイルは比較的大きく、最大のものは 1.1MB なので、サブセット化した CSS ファイルやイタリック体のない CSS ファイルを与えています。',
+        question: 'なぜサブセット CSS ファイルがあるのですか。',
+        answer: '完全な CSS ファイルのサイズが大きいだから、サブセット化され、Italic体の部分を削除して与えています。',
       },
     ],
   },

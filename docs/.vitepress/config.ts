@@ -66,7 +66,7 @@ const sidebar: DefaultTheme.sidebar = {
       text: '導入',
       items: [
         { text: 'LPSub Fonts について', link: '/ja/' },
-        { text: '開始', link: '/ja/guide/getting-started' },
+        { text: 'スタート', link: '/ja/guide/getting-started' },
       ],
     },
     {
