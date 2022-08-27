@@ -3,7 +3,7 @@ export const showTraditionalChinese = ['HC', 'TC', 'TW', 'HK', 'CL']
 export const showJapanese = ['JP', 'J']
 export const ignoreArea = ['-cn', '-hk', '-jp', '-tw']
 export const examples = {
-  japanese: '「河上徹太郎は言った『人は歳とともに澄んでゆくものである。』わたしもそう思います。」',
+  japanese: '彼女は、「糸守町での約束、忘れないでね」と言い、私はそれを忘れない。',
   simplifiedChinese: '“河上彻太郎曰：‘人生随着岁月而日渐澄明透彻。’我也是这么认为的。”',
   traditionalChinese: '「河上徹太郎曰：『人生隨著歲月而日漸澄明透徹。』我也是這麼認為的。」',
 }
