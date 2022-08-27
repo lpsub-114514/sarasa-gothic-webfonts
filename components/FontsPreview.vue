@@ -59,7 +59,7 @@ const previewTextStyle = computed(() => {
   }
 
   return {
-    fontFamily: `Arial, Helvetica, '${fontFamily.join(' ')}', sans-serif`,
+    fontFamily: `'${fontFamily.join(' ')}', sans-serif`,
     fontStyle: chosenFontStyle.value,
     fontWeight: chosenFontWeight.value,
   }
@@ -123,7 +123,7 @@ function firstUpperCase(s: string) {
       </tr>
       <tr>
         <td></td>
-        <td>sarasa-gothic-sc-bold-noitalic.css</td>
+        <td>sarasa-gothic-sc-noitalic.css</td>
       </tr>
     </tbody>
   </table>
@@ -174,10 +174,12 @@ function firstUpperCase(s: string) {
       </table>
     </li>
   </ol>
+<hr>
+<h1>Q&A</h1>
 
   <span v-for="(faq, index) in noticeTexts[props.lang].FAQ">
-    <ol :start="index + 1"><li>{{ faq.question }}</li></ol>
-    <p>&nbsp;{{ faq.answer }}</p>
+    <blockquote>Q: {{ faq.question }}
+    <p>A: {{ faq.answer }}</p></blockquote>
   </span>
 </template>
 

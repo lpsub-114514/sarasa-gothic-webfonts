@@ -3,7 +3,7 @@ export const showTraditionalChinese = ['HC', 'TC', 'TW', 'HK', 'CL']
 export const showJapanese = ['JP', 'J']
 export const ignoreArea = ['-cn', '-hk', '-jp', '-tw']
 export const examples = {
-  japanese: '彼女は、「糸守町での約束、忘れないでね」と言い、私はそれを忘れない。',
+  japanese: '「河上徹太郎は言った『人は歳とともに澄んでゆくものである。』わたしもそう思います。」',
   simplifiedChinese: '“河上彻太郎曰：‘人生随着岁月而日渐澄明透彻。’我也是这么认为的。”',
   traditionalChinese: '「河上徹太郎曰：『人生隨著歲月而日漸澄明透徹。』我也是這麼認為的。」',
 }
@@ -23,7 +23,7 @@ export const noticeTexts = {
     italic: 'Additional Options',
     FAQ: [{
         question: 'Why are there subset CSS files?',
-        answer: 'Answer: Because the complete single CSS file is relatively large, the largest one is 1.1MB, so the subsetted CSS files and CSS files without italics are given.',
+        answer: 'Because the complete single CSS file is relatively large, the largest one is 1.1MB, so the subsetted CSS files and CSS files without italics are given.',
       },
     ],
   },
@@ -43,7 +43,7 @@ export const noticeTexts = {
     FAQ: [
       {
         question: '为什么会有子集化的 CSS 文件？',
-        answer: '答：因为完整的单个 CSS 文件比较大，最大的一个文件有 1.1MB，所以给出了子集化的 CSS 文件和去掉斜体的 CSS 文件。',
+        answer: '因为完整的单个 CSS 文件比较大，最大的一个文件有 1.1MB，所以给出了子集化的 CSS 文件和去掉斜体的 CSS 文件。',
       },
     ],
   },
@@ -63,7 +63,7 @@ export const noticeTexts = {
     FAQ: [
       {
         question: '為什麼會有子集化的 CSS 文件？',
-        answer: '答：因為完整的單個 CSS 文件比較大，最大的一個文件有 1.1MB，所以給出了子集化的 CSS 文件和去掉斜體的 CSS 文件。',
+        answer: '因為完整的單個 CSS 文件比較大，最大的一個文件有 1.1MB，所以給出了子集化的 CSS 文件和去掉斜體的 CSS 文件。',
       },
     ],
   },
@@ -83,7 +83,7 @@ export const noticeTexts = {
     FAQ: [
       {
         question: '為什麼會有子集化的 CSS 文件？',
-        answer: '答：因為完整的單個 CSS 文件比較大，最大的一個文件有 1.1MB，所以給出了子集化的 CSS 文件和去掉斜體的 CSS 文件。',
+        answer: '因為完整的單個 CSS 文件比較大，最大的一個文件有 1.1MB，所以給出了子集化的 CSS 文件和去掉斜體的 CSS 文件。',
       },
     ],
   },
@@ -103,7 +103,7 @@ export const noticeTexts = {
     FAQ: [
       {
         question: 'なぜサブセット CSS ファイルがあるのですか?',
-        answer: '回答：完全な単一の CSS ファイルは比較的大きく、最大のものは 1.1MB なので、サブセット化した CSS ファイルやイタリック体のない CSS ファイルを与えています。',
+        answer: '完全な単一の CSS ファイルは比較的大きく、最大のものは 1.1MB なので、サブセット化した CSS ファイルやイタリック体のない CSS ファイルを与えています。',
       },
     ],
   },
