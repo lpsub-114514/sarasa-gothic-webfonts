@@ -1,6 +1,6 @@
 # LPSub Fonts について
 
-[Google Fonts](https://developers.google.com/fonts/docs/getting_started) Google Fonts には Noto シリーズや Ubuntu などのウェブフォントが活用できるが、Notorious Sans シリ一ズのブラウザでのレンダリング効果は更紗ゴシックに及ばないため、このプロジェクトを作りました。
+[Google Fonts](https://developers.google.com/fonts/docs/getting_started) には Noto シリーズや Ubuntu などのウェブフォントが活用できるが、Notorious Sans シリ一ズのブラウザでのレンダリング効果は更紗ゴシックに及ばないため、このプロジェクトを作りました。
 
 ## ライセンス
 [![](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja)
