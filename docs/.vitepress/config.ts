@@ -7,6 +7,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: 'About LPSub Fonts', link: '/en/' },
         { text: 'Getting Started', link: '/en/guide/getting-started' },
+        { text: 'Recruitment', link: 'https://bbs.acgrip.com/thread-9585-1-1.html' },
       ],
     },
     {
@@ -14,7 +15,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: 'Sarasa Gothic', link: '/en/explain/Sarasa-Gothic' },
       ],
-    }
+    },
   ],
   '/zh-cn/': [
     {
@@ -22,6 +23,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '关于 LPSub Fonts', link: '/zh-cn/' },
         { text: '开始使用', link: '/zh-cn/guide/getting-started' },
+        { text: '字幕组招募', link: 'https://bbs.acgrip.com/thread-9585-1-1.html' },
       ],
     },
     {
@@ -29,7 +31,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '更纱黑体', link: '/zh-cn/explain/Sarasa-Gothic' },
       ],
-    }
+    },
   ],
   '/zh-hk/': [
     {
@@ -37,6 +39,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '關於 LPSub Fonts', link: '/zh-hk/' },
         { text: '開始使用', link: '/zh-hk/guide/getting-started' },
+        { text: '字幕組招募', link: 'https://bbs.acgrip.com/thread-9585-1-1.html' },
       ],
     },
     {
@@ -44,7 +47,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '更紗黑體', link: '/zh-hk/explain/Sarasa-Gothic' },
       ],
-    }
+    },
   ],
   '/zh-tw/': [
     {
@@ -52,6 +55,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '關於 LPSub Fonts', link: '/zh-tw/' },
         { text: '開始使用', link: '/zh-tw/guide/getting-started' },
+        { text: '字幕組招募', link: 'https://bbs.acgrip.com/thread-9585-1-1.html' },
       ],
     },
     {
@@ -59,7 +63,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: '更紗黑體', link: '/zh-tw/explain/Sarasa-Gothic' },
       ],
-    }
+    },
   ],
   '/ja/': [
     {
@@ -67,6 +71,7 @@ const sidebar: DefaultTheme.sidebar = {
       items: [
         { text: 'LPSub Fonts について', link: '/ja/' },
         { text: 'スタート', link: '/ja/guide/getting-started' },
+        { text: '字幕班募集', link: 'https://bbs.acgrip.com/thread-9585-1-1.html' },
       ],
     },
     {
@@ -81,6 +86,9 @@ const sidebar: DefaultTheme.sidebar = {
 export default defineConfig({
   title: 'LPSub Fonts API',
   description: 'LPSub Fonts Document',
+  head: [
+    ['link', { rel: 'shortcut icon', href: "./favicon.ico", type: "image/x-icon" }],
+  ],
   locales: {
     '/en/': {
       lang: 'en',
